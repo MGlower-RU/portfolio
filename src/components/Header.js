@@ -42,6 +42,16 @@ export default function Header() {
     setIsOpened(!isOpened)
   }
 
+  function checkHeaderClick(e) {
+    console.log('clicked');
+    if(e.target.closest('header') === null) {
+      document.body.classList.remove('menu-opened')
+      setIsOpened(false)
+    }
+  }
+
+  if(isOpened === true) window.onclick = checkHeaderClick
+
   return (
     <header className='header__wrapper'>
       <a

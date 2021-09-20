@@ -1,10 +1,12 @@
 import { Route, Switch, Redirect } from 'react-router-dom';
 
+import Introduction from '../pages/Introduction'
+
 export default function Routing() {
   return (
     <Switch>
       <Route path='/about'>
-        <h1>About me page</h1>
+        <Introduction />
       </Route>
       <Route path='/skills'>
         <h1>My skill-factor</h1>

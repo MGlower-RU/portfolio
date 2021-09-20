@@ -2,5 +2,7 @@
 @import 'variables';
 
 body {
+  color: var(--light);
   font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
 }

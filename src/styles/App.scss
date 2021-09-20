@@ -7,4 +7,12 @@
 
 .main__wrapper {
   width: 100%;
+  padding: var(--vertical-main-padding) var(--horizontal-main-padding);
+}
+
+@media(max-width: 1110px) {
+  .page {
+    --vertical-main-padding: 4rem;
+    --horizontal-main-padding: 3rem;
+  }
 }

@@ -1,0 +1,241 @@
+.introduction__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 12.4rem - var(--vertical-main-padding)*2);
+}
+
+.introduction__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem 1rem;
+}
+
+.introduction__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction__title {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  
+  h1 {
+    font-size: 7.2rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing);
+  }
+
+  h2 {
+    font-size: 5.4rem;
+    font-weight: 300;
+    letter-spacing: var(--letter-spacing);
+  }
+}
+
+.introduction__hobbies__wrapper {
+  background-color: var(--purple);
+  padding: 3rem 4.4rem;
+  border-radius: 4rem;
+
+  ul {
+    margin-top: 1rem;
+    margin-left: 5rem;
+
+    li {
+      font-size: 3.6rem;
+      font-weight: 300;
+      letter-spacing: var(--letter-spacing);
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.introduction__hobbies__header {
+  font-size: 4.4rem;
+}
+
+.introduction__about {
+  h3 {
+    font-size: 4.4rem;
+    font-weight: 300;
+    line-height: 1.7em;
+    letter-spacing: var(--letter-spacing);
+    text-align: center;
+  }
+}
+
+.introduction__scroll-arrow {
+  margin-top: 4rem;
+}
+
+@media(max-width: 1440px) {
+  .introduction__title {    
+    h1 {
+      font-size: 5.8rem;
+    }
+  
+    h2 {
+      font-size: 4.2rem;
+    }
+  }
+  
+  .introduction__hobbies__wrapper {
+    padding: 2.4rem 3.6rem;
+
+    ul {
+      margin-left: 4rem;
+  
+      li {
+        font-size: 2.8rem;
+  
+        &:not(:last-of-type) {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+  
+  .introduction__hobbies__header {
+    font-size: 3.4rem;
+  }
+  
+  .introduction__about {  
+    h3 {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+@media(max-width: 1110px) {
+  .introduction__title {    
+    h1 {
+      font-size: 4.6rem;
+    }
+  
+    h2 {
+      font-size: 3.8rem;
+    }
+  }
+  
+  .introduction__hobbies__wrapper {
+    padding: 2rem 3rem;
+
+    ul {
+      margin-left: 3rem;
+  
+      li {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  
+  .introduction__hobbies__header {
+    font-size: 2.8rem;
+  }
+  
+  .introduction__about {  
+    h3 {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media(max-width: 900px) {
+  .introduction__title {    
+    h1 {
+      font-size: 3.6rem;
+    }
+  
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  
+  .introduction__hobbies__wrapper {
+    ul {
+      margin-left: 2.4rem;
+  
+      li {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  .introduction__hobbies__header {
+    font-size: 2.4rem;
+  }
+  
+  .introduction__about {  
+    h3 {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .introduction__title {    
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  .introduction__hobbies__wrapper {
+    ul {
+      margin-left: 1.4rem;
+  
+      li {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  
+  .introduction__hobbies__header {
+    font-size: 2rem;
+  }
+  
+  .introduction__about {  
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media(max-width: 425px) {
+  .introduction__title {
+    gap: 2rem;
+
+    h1 {
+      font-size: 2.6rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  .introduction__hobbies__wrapper {
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+  }
+  
+  .introduction__about {  
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+}
