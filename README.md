@@ -1,1 +1,1 @@
-My portfolio site
+react-router-dom, hooks, scss, git, host deploy
