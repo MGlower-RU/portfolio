@@ -43,7 +43,6 @@ export default function Header() {
   }
 
   function checkHeaderClick(e) {
-    console.log('clicked');
     if(e.target.closest('header') === null) {
       document.body.classList.remove('menu-opened')
       setIsOpened(false)
@@ -59,9 +58,9 @@ export default function Header() {
         onClick={toggleMenu}
         className='menu__mobile__button'
       >
-        {/* use "a" tag as wrapper for clicking
-        width/height: 100% */}
-        {isOpened ? 'Close' : 'Open'} menu
+        <span>
+          {isOpened ? 'Close' : 'Open'} menu
+        </span>
       </a>
       <div className="menu">
         <div className="nav">
