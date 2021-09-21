@@ -1,6 +1,9 @@
+import React, { lazy } from 'react';
+
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Introduction from '../pages/Introduction'
+const Introduction = lazy(() => import('../pages/Introduction'));
+const Skills = lazy(() => import('../pages/Skills'));
 
 export default function Routing() {
   return (
@@ -9,7 +12,7 @@ export default function Routing() {
         <Introduction />
       </Route>
       <Route path='/skills'>
-        <h1>My skill-factor</h1>
+        <Skills />
       </Route>
       <Route path='/projects'>
         <h1>My projects</h1>

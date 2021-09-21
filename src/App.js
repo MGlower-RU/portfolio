@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import DataContextFunction from './contexts/DataContext';
@@ -17,7 +17,9 @@ function App() {
         <Header />
         <DataContextFunction>
           <main className='main__wrapper'>
-            <Routing />
+            <Suspense fallback='loading...'>
+              <Routing />
+            </Suspense>
           </main>
         </DataContextFunction>
         <Footer />
