@@ -1,3 +1,8 @@
+import DaruLink from '../images/daru-link.png'
+import Flowbase from '../images/flowbase.png'
+import Trafalgar from '../images/trafalgar.png'
+import Yakutia from '../images/yakutia.png'
+
 export const data = {
   hobbies: [
     'Books reading',
@@ -65,6 +70,43 @@ export const data = {
           name: 'inline',
         },
       ]
+    },
+  ],
+  projects: [
+    {
+      id: 'daru-link',
+      img: DaruLink,
+      title: 'Daru link',
+      type: 'Landing page project',
+      tags: []
+    },
+    {
+      id: 'flowbase',
+      img: Flowbase,
+      title: 'Flowbase',
+      type: 'Landing page project',
+      tags: []
+    },
+    {
+      id: 'trafalgar',
+      img: Trafalgar,
+      title: 'Trafalgar',
+      type: 'Landing page project',
+      tags: []
+    },
+    {
+      id: 'yakutia',
+      img: Yakutia,
+      title: 'Yakutia',
+      type: 'Landing page project',
+      tags: []
+    },
+    {
+      id: 'some',
+      img: Yakutia,
+      title: 'Yakutia',
+      type: 'Landing page project',
+      tags: []
     },
   ]
 }
