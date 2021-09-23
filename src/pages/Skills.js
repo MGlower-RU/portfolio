@@ -35,7 +35,6 @@ export default function Skills() {
       document
       .querySelectorAll('.skills__item--extra')
       .forEach(el => el.classList.remove('active'))
-
       window.removeEventListener('click', checkSkillClick)
     }
   }

@@ -78,35 +78,35 @@ export const data = {
       img: DaruLink,
       title: 'Daru link',
       type: 'Landing page project',
-      tags: []
+      tags: ['mongodb', 'html', 'css']
     },
     {
       id: 'flowbase',
       img: Flowbase,
       title: 'Flowbase',
       type: 'Landing page project',
-      tags: []
+      tags: ['mongodb', 'html', 'css']
     },
     {
       id: 'trafalgar',
       img: Trafalgar,
       title: 'Trafalgar',
       type: 'Landing page project',
-      tags: []
+      tags: ['firebase', 'reactjs']
     },
     {
       id: 'yakutia',
       img: Yakutia,
       title: 'Yakutia',
       type: 'Landing page project',
-      tags: []
+      tags: ['mongodb', 'html', 'css']
     },
     {
       id: 'some',
       img: Yakutia,
       title: 'Yakutia',
       type: 'Landing page project',
-      tags: []
+      tags: ['mongodb', 'html', 'css']
     },
   ]
 }

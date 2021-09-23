@@ -110,7 +110,8 @@
   text-transform: uppercase;
   transition: color var(--transition);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--purple);
     transition: color var(--transition);
   }
