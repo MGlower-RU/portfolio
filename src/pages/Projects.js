@@ -8,25 +8,24 @@ export default function Projects() {
   const tags = data.skills.map(el => el.items).flat(1).map(el => el.name.toLowerCase())
   const [checkedTags, setCheckedTags] = useState(tags)
 
-  function openSkill(e) {
+  function openTags(e) {
     e.preventDefault()
     e.target.classList.toggle('active')
-    window.addEventListener('click', checkProjectClick)
+    window.addEventListener('click', checkTagsClick)
   }
-  
-  function checkProjectClick(e) {
+
+  function checkTagsClick(e) {
     let itemContainer = e.target.closest('.projects__filter__wrapper');
     if(itemContainer === null) {
       document
       .querySelectorAll('.projects__filter')
       .forEach(el => el.classList.remove('active'))
-      window.removeEventListener('click', checkProjectClick)
+      window.removeEventListener('click', checkTagsClick)
     }
   }
 
   function checkTag(e) {
     e.preventDefault()
-
     const tagsArray = []
 
     e.target.classList.toggle('active')
@@ -44,7 +43,7 @@ export default function Projects() {
         <a
           href='/'
           className="projects__filter"
-          onClick={openSkill}
+          onClick={openTags}
         >
           Filter by
         </a>
@@ -78,7 +77,8 @@ export default function Projects() {
                   style={{
                     background: `linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('${el.img}')`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover'
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
                   }}
                 >
                   <h3>
