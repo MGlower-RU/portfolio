@@ -106,6 +106,7 @@ export const data = {
       title: 'Daru link',
       descrition: '',
       type: 'Landing page project',
+      hostLink: '/',
       tags: ['mongodb', 'html', 'css']
     },
     {
@@ -119,6 +120,7 @@ export const data = {
       title: 'Flowbase',
       descrition: '',
       type: 'Landing page project',
+      hostLink: '/',
       tags: ['mongodb', 'html', 'css']
     },
     {
@@ -133,8 +135,9 @@ export const data = {
         Trafalgar6,
       ],
       title: 'Trafalgar',
-      descrition: '',
+      descrition: 'This is my project description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
       type: 'Landing page project',
+      hostLink: 'https://mglower-countries.netlify.app/',
       tags: ['firebase', 'reactjs']
     },
     {
@@ -153,6 +156,7 @@ export const data = {
       title: 'Yakutia',
       descrition: '',
       type: 'Landing page project',
+      hostLink: '/',
       tags: ['mongodb', 'html', 'css']
     },
   ]

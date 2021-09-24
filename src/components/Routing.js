@@ -1,11 +1,11 @@
 import React, { lazy } from 'react';
 
 import { Route, Switch, Redirect } from 'react-router-dom';
-import Project from '../pages/Project';
 
 const Introduction = lazy(() => import('../pages/Introduction'));
 const Skills = lazy(() => import('../pages/Skills'));
 const Projects = lazy(() => import('../pages/Projects'));
+const Project = lazy(() => import('../pages/Project'));
 
 export default function Routing() {
   return (
