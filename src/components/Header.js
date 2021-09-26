@@ -1,9 +1,12 @@
+import React, { useContext } from 'react';
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { i18nContext } from '../contexts/i18nextContext'
 
 import '../styles/header.scss'
 
 export default function Header() {
+  const { lngDetect } = useContext(i18nContext)
   const [isOpened, setIsOpened] = useState(false)
 
   const navItems = [
@@ -27,13 +30,18 @@ export default function Header() {
       name: 'ru'
     },
     {
-      native: 'en',
+      native: 'en-US',
       name: 'en'
     },
   ]
 
   function changeLanguage(e) {
     e.preventDefault()
+    lngDetect.changeLanguage(e.target.dataset.lngNative)
+    document.querySelectorAll('.language')
+    .forEach(el => {
+      el !== e.target ? el.classList.remove('current') : el.classList.add('current')
+    })
   }
 
   function toggleMenu(e) {
@@ -86,6 +94,7 @@ export default function Header() {
                 <a
                   key={i}
                   href='/'
+                  data-lng-native={el.native}
                   className="language"
                   onClick={changeLanguage}
                 >

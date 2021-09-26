@@ -106,12 +106,14 @@
 .language {
   position: relative;
   font-size: 1.2rem;
+  font-weight: 600;
   color: var(--dark);
   text-transform: uppercase;
   transition: color var(--transition);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &.current {
     color: var(--purple);
     transition: color var(--transition);
   }
