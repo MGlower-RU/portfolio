@@ -5,7 +5,8 @@ import '../styles/projects.scss'
 
 export default function Projects() {
   const data = useContext(DataContext)
-  const tags = data.skills.map(el => el.items).flat(1).map(el => el.name.toLowerCase())
+  const tags = [...new Set(data.projects.map(el => el.tags).flat(1))]
+  console.log(tags);
   const [checkedTags, setCheckedTags] = useState(tags)
 
   function openTags(e) {
