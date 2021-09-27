@@ -4,7 +4,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 12.4rem - var(--vertical-main-padding)*2);
+  padding-bottom: var(--vertical-main-padding);
+  min-height: calc(100vh - 9.2rem);
 }
 
 .introduction__header {
@@ -14,6 +15,7 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 3rem 1rem;
+  margin-bottom: 3rem;
 }
 
 .introduction__bottom {
@@ -65,18 +67,55 @@
   font-size: 4.4rem;
 }
 
-.introduction__about {
-  h3 {
-    font-size: 4.4rem;
-    font-weight: 300;
-    line-height: 1.7em;
-    letter-spacing: var(--letter-spacing);
-    text-align: center;
-  }
+.introduction__motto {
+  font-size: 4.4rem;
+  font-weight: 300;
+  line-height: 1.7em;
+  letter-spacing: var(--letter-spacing);
+  text-align: center;
 }
 
 .introduction__scroll-arrow {
   margin-top: 4rem;
+}
+
+.about__cv__download {
+  display: inline-flex;
+  font-size: 2rem;
+  color: var(--light);
+  border-bottom: .1rem dashed var(--light);
+  padding-bottom: .4em;
+  margin-bottom: 3rem;
+  transition: all var(--transition);
+
+  &:hover,
+  &:focus {
+    --light: var(--purple)
+  }
+}
+
+.about__cv__wrapper {
+  width: 100%;
+
+  p {
+    font-size: 2.4rem;
+    text-indent: 2rem;
+
+    a {
+      color: var(--light);
+      border-bottom: .1rem solid var(--light);
+      transition: all var(--transition);
+
+      &:hover,
+      &:focus {
+        --light: var(--purple)
+      }
+    }
+    
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 @media(max-width: 1440px) {
@@ -110,10 +149,8 @@
     font-size: 3.4rem;
   }
   
-  .introduction__about {  
-    h3 {
-      font-size: 3.6rem;
-    }
+  .introduction__motto {  
+    font-size: 3.6rem;
   }
 }
 
@@ -144,10 +181,8 @@
     font-size: 2.8rem;
   }
   
-  .introduction__about {  
-    h3 {
-      font-size: 3rem;
-    }
+  .introduction__motto {  
+    font-size: 3rem;
   }
 }
 
@@ -176,10 +211,12 @@
     font-size: 2.4rem;
   }
   
-  .introduction__about {  
-    h3 {
-      font-size: 2.4rem;
-    }
+  .introduction__motto {  
+    font-size: 2.4rem;
+  }
+
+  .about__cv__download {
+    font-size: 1.6rem;
   }
 }
 
@@ -208,16 +245,14 @@
     font-size: 2rem;
   }
   
-  .introduction__about {  
-    h3 {
-      font-size: 1.8rem;
-    }
+  .introduction__motto {  
+    font-size: 1.8rem;
   }
 }
 
 @media(max-width: 480px) {
   .introduction__wrapper {
-    min-height: calc(100vh - 10rem - var(--vertical-main-padding)*2);
+    min-height: calc(100vh - 6.8rem);
   }
 
   .introduction__title {
@@ -237,9 +272,11 @@
     padding: 1rem 2rem;
   }
   
-  .introduction__about {  
-    h3 {
-      font-size: 1.4rem;
-    }
+  .introduction__motto {  
+    font-size: 1.4rem;
+  }
+
+  .about__cv__download {
+    font-size: 1.4rem;
   }
 }

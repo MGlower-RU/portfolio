@@ -1,0 +1,60 @@
+{
+  "defaults": {
+    "back": "Go back",
+    "hostLink": "Check site",
+    "filter": "Filter by"
+  },
+  "header": {
+    "nav": {
+      "about": "About me",
+      "skills": "Skills",
+      "projects": "Projects"
+    }
+  },
+  "about": {
+    "introduction": {
+      "title": {
+        "profession": {
+          "h2": "I'm a",
+          "h1": "Frontend developer"
+        },
+        "name": {
+          "h2": "My name is",
+          "h1": "Danil" 
+        }
+      },
+      "hobbies": {
+        "header": "Hobbies:",
+        "hobby": {
+          "books": "Books reading",
+          "cycling": "Cycling",
+          "films": "Films watching",
+          "learning": "Learn new things"
+        }
+      },
+      "motto": "I wanna increase my skills and make its useful."
+    },
+    "cv": {
+      "download": "Click to download CV"
+    }
+  },
+  "skills": {
+    "database": {
+      "name": "database"
+    },
+    "cms": {
+      "name": "CMS"
+    },
+    "technologies": {
+      "name": "technologies"
+    },
+    "styling": {
+      "name": "Styling"
+    }
+  },
+  "projects": {
+    "types": {
+      "landing": "Landing page project"
+    }
+  }
+}

@@ -6,7 +6,7 @@ import { i18nContext } from '../contexts/i18nextContext'
 import '../styles/header.scss'
 
 export default function Header() {
-  const { lngDetect } = useContext(i18nContext)
+  const { lngDetect, t } = useContext(i18nContext)
   const [isOpened, setIsOpened] = useState(false)
 
   const navItems = [
@@ -81,7 +81,7 @@ export default function Header() {
                   to={`/${el.id}`}
                   className="nav__item"
                 >
-                  {el.name}
+                  {t(`header.nav.${el.id}`)}
                 </NavLink>
               )
             })

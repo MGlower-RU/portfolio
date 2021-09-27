@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useParams } from "react-router"
 import { DataContext } from "../contexts/DataContext";
+import { i18nContext } from "../contexts/i18nextContext";
 import { Carousel } from 'react-responsive-carousel';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -9,13 +10,14 @@ import { Link } from "react-router-dom";
 
 export default function Project() {
   const { projects } = useContext(DataContext)
+  const { t } = useContext(i18nContext)
   const { id } = useParams()
   const project = projects.find(el => el.id === id)
 
   return (
     <div className="project__wrapper">
       <Link to='/projects' className="project__back">
-        Go back
+        {t('defaults.back')}
       </Link>
       <div className="project__info">
         <div className="project__carousel__wrapper">
@@ -47,7 +49,7 @@ export default function Project() {
             {project.descrition}
           </p>
           <a href={project.hostLink}>
-            Check site
+            {t('defaults.hostLink')}
           </a>
           <div className="project__tags">
             {

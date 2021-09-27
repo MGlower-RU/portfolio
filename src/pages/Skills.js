@@ -1,10 +1,12 @@
 import { useContext } from 'react'
 import { DataContext } from '../contexts/DataContext'
+import { i18nContext } from '../contexts/i18nextContext'
 
 import '../styles/skills.scss'
 
 export default function Skills() {
   const { skills } = useContext(DataContext)
+  const { t } = useContext(i18nContext)
 
   function openSkill(e) {
     e.preventDefault()
@@ -46,7 +48,7 @@ export default function Skills() {
           return (
             <div key={i} className="skills__list__wrapper">
               <h2 className="skills__list__header">
-                {el.name}
+                {t(`skills.${el.name}.name`)}
               </h2>
               <ul className="skills__list">
                 {

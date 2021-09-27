@@ -1,0 +1,60 @@
+{
+  "defaults": {
+    "back": "Назад",
+    "hostLink": "Перейти на сайт",
+    "filter": "Фильтры"
+  },
+  "header": {
+    "nav": {
+      "about": "Обо мне",
+      "skills": "Навыки",
+      "projects": "Проекты"
+    }
+  },
+  "about": {
+    "introduction": {
+      "title": {
+        "profession": {
+          "h2": "Я",
+          "h1": "Frontend разработчик"
+        },
+        "name": {
+          "h2": "Меня зовут",
+          "h1": "Данил" 
+        }
+      },
+      "hobbies": {
+        "header": "Любимые занятия:",
+        "hobby": {
+          "books": "Чтение книг",
+          "cycling": "Велопрогулки",
+          "films": "Просмотр фильмов",
+          "learning": "Изучение нового"
+        }
+      },
+      "motto": "Хочу сделать полученные навыки полезными."
+    },
+    "cv": {
+      "download": "Скачать резюме"
+    }
+  },
+  "skills": {
+    "database": {
+      "name": "базы данных"
+    },
+    "cms": {
+      "name": "CMS"
+    },
+    "technologies": {
+      "name": "технологии"
+    },
+    "styling": {
+      "name": "Стилизация"
+    }
+  },
+  "projects": {
+    "types": {
+      "landing": "Лэндинг"
+    }
+  }
+}

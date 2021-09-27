@@ -1,11 +1,13 @@
 import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DataContext } from '../contexts/DataContext'
+import { i18nContext } from '../contexts/i18nextContext'
 import '../styles/projects.scss'
 
 export default function Projects() {
   const data = useContext(DataContext)
-  const tags = [...new Set(data.projects.map(el => el.tags).flat(1))]
+  const { t } = useContext(i18nContext)
+  const tags = [...new Set(data.projects.map(el => el.tags).flat(1).map(el => el.toLowerCase()))]
   console.log(tags);
   const [checkedTags, setCheckedTags] = useState(tags)
 
@@ -46,7 +48,7 @@ export default function Projects() {
           className="projects__filter"
           onClick={openTags}
         >
-          Filter by
+          {t('defaults.filter')}
         </a>
         <ul>
           {
@@ -68,7 +70,7 @@ export default function Projects() {
       <div className="projects__container">
         {
           data.projects
-          .filter(el => el.tags.some(el => checkedTags.includes(el)))
+          .filter(el => el.tags.some(el => checkedTags.includes(el.toLowerCase())))
           .map(el => {
             return (
               <Link to={`/projects/${el.id}`} key={el.id} className="project">
@@ -86,7 +88,7 @@ export default function Projects() {
                     {el.title}
                   </h3>
                   <h4>
-                    {el.type}
+                    {t(`projects.types.${el.type}`)}
                   </h4>
                 </div>
               </Link>

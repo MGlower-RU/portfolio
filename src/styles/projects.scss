@@ -11,14 +11,14 @@
   align-items: flex-start;
   align-self: flex-end;
   margin-bottom: 6rem;
-  z-index: 10;
+  z-index: 8;
   
   & > a {
     font-size: 2.4rem;
     font-weight: 300;
     letter-spacing: var(--letter-spacing);
     color: var(--dark);
-    padding: 1rem 3rem;
+    padding: .5rem 2rem;
     background-color: var(--light);
     border-bottom: .1rem solid var(--dark);
 

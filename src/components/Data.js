@@ -24,10 +24,10 @@ import Yakutia8 from '../images/data/yakutia/8.png'
 
 export const data = {
   hobbies: [
-    'Books reading',
-    'Cycling',
-    'Films watching',
-    'Learn new things'
+    'books',
+    'cycling',
+    'films',
+    'learning',
   ],
   skills: [
     {
@@ -46,7 +46,7 @@ export const data = {
       ]
     },
     {
-      name: 'CMS',
+      name: 'cms',
       items: [
         {
           name: 'netlify',
@@ -77,7 +77,7 @@ export const data = {
       ]
     },
     {
-      name: 'Styling',
+      name: 'styling',
       items: [
         {
           name: 'Material-UI',
@@ -105,9 +105,9 @@ export const data = {
       ],
       title: 'Daru link',
       descrition: '',
-      type: 'Landing page project',
+      type: 'landing',
       hostLink: '/',
-      tags: ['mongodb', 'html', 'css']
+      tags: ['Mongodb', 'html', 'css']
     },
     {
       id: 'flowbase',
@@ -119,9 +119,9 @@ export const data = {
       ],
       title: 'Flowbase',
       descrition: '',
-      type: 'Landing page project',
+      type: 'landing',
       hostLink: '/',
-      tags: ['mongodb', 'html', 'css']
+      tags: ['Mongodb', 'html', 'css']
     },
     {
       id: 'trafalgar',
@@ -136,7 +136,7 @@ export const data = {
       ],
       title: 'Trafalgar',
       descrition: 'This is my project description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
-      type: 'Landing page project',
+      type: 'landing',
       hostLink: 'https://mglower-countries.netlify.app/',
       tags: ['firebase', 'reactjs']
     },
@@ -155,9 +155,9 @@ export const data = {
       ],
       title: 'Yakutia',
       descrition: '',
-      type: 'Landing page project',
+      type: 'landing',
       hostLink: '/',
-      tags: ['mongodb', 'html', 'css']
+      tags: ['Mongodb', 'html', 'css']
     },
   ]
 }
