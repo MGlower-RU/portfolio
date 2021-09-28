@@ -54,7 +54,11 @@
   },
   "projects": {
     "types": {
-      "landing": "Landing page project"
+      "landing": "Landing",
+      "game": "Game"
     }
+  },
+  "project": {
+    "description": "{{en}}"
   }
 }

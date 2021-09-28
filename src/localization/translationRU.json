@@ -54,7 +54,11 @@
   },
   "projects": {
     "types": {
-      "landing": "Лэндинг"
+      "landing": "Лэндинг",
+      "game": "Игра"
     }
+  },
+  "project": {
+    "description": "{{ru}}"
   }
 }

@@ -1,9 +1,5 @@
-import DaruLink1 from '../images/data/daruLink/1.png'
-import DaruLink2 from '../images/data/daruLink/2.png'
-import DaruLink3 from '../images/data/daruLink/3.png'
-import DaruLink4 from '../images/data/daruLink/4.png'
-import DaruLink5 from '../images/data/daruLink/5.png'
-import DaruLink6 from '../images/data/daruLink/6.png'
+import Movie1 from '../images/data/movie/1.png'
+import Movie2 from '../images/data/movie/2.png'
 import Flowbase1 from '../images/data/flowbase/1.png'
 import Flowbase2 from '../images/data/flowbase/2.png'
 import Flowbase3 from '../images/data/flowbase/3.png'
@@ -21,6 +17,8 @@ import Yakutia5 from '../images/data/yakutia/5.png'
 import Yakutia6 from '../images/data/yakutia/6.png'
 import Yakutia7 from '../images/data/yakutia/7.png'
 import Yakutia8 from '../images/data/yakutia/8.png'
+import RockPaperScissors1 from '../images/data/rockPaperScissors/1.png'
+import RockPaperScissors2 from '../images/data/rockPaperScissors/2.png'
 
 export const data = {
   hobbies: [
@@ -93,21 +91,36 @@ export const data = {
   ],
   projects: [
     {
-      id: 'daru-link',
-      img: DaruLink1,
+      id: 'rock-paper-scissors',
+      img: RockPaperScissors1,
       imgs: [
-        DaruLink1,
-        DaruLink2,
-        DaruLink3,
-        DaruLink4,
-        DaruLink5,
-        DaruLink6,
+        RockPaperScissors1,
+        RockPaperScissors2
       ],
-      title: 'Daru link',
-      descrition: '',
+      title: 'Rock Paper Scissors',
+      description: {
+        en: 'This project was created to understand the react hooks(useState, useEffect, useContext) behavior.',
+        ru: 'Проект был сделан для изучения работы реакт хуков.'
+      },
+      type: 'game',
+      hostLink: 'https://mglower-rock-paper-scissors.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks']
+    },
+    {
+      id: 'movie',
+      img: Movie1,
+      imgs: [
+        Movie1,
+        Movie2,
+      ],
+      title: 'Movie Check',
+      description: {
+        en: 'Find the movie and get info about it.',
+        ru: 'Найдите нужный фильм и получите информацию о нём.'
+      },
       type: 'landing',
-      hostLink: '/',
-      tags: ['Mongodb', 'html', 'css']
+      hostLink: 'https://mglower-movie.netlify.app/',
+      tags: ['react', 'react hooks', 'material-ui', 'api']
     },
     {
       id: 'flowbase',
@@ -118,10 +131,13 @@ export const data = {
         Flowbase3,
       ],
       title: 'Flowbase',
-      descrition: '',
+      description: {
+        en: '',
+        ru: ''
+      },
       type: 'landing',
       hostLink: '/',
-      tags: ['Mongodb', 'html', 'css']
+      tags: []
     },
     {
       id: 'trafalgar',
@@ -135,10 +151,13 @@ export const data = {
         Trafalgar6,
       ],
       title: 'Trafalgar',
-      descrition: 'This is my project description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum',
+      description: {
+        en: '',
+        ru: ''
+      },
       type: 'landing',
       hostLink: 'https://mglower-countries.netlify.app/',
-      tags: ['firebase', 'reactjs']
+      tags: []
     },
     {
       id: 'yakutia',
@@ -154,10 +173,13 @@ export const data = {
         Yakutia8,
       ],
       title: 'Yakutia',
-      descrition: '',
+      description: {
+        en: '',
+        ru: ''
+      },
       type: 'landing',
       hostLink: '/',
-      tags: ['Mongodb', 'html', 'css']
+      tags: []
     },
   ]
 }

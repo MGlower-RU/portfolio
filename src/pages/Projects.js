@@ -8,7 +8,6 @@ export default function Projects() {
   const data = useContext(DataContext)
   const { t } = useContext(i18nContext)
   const tags = [...new Set(data.projects.map(el => el.tags).flat(1).map(el => el.toLowerCase()))]
-  console.log(tags);
   const [checkedTags, setCheckedTags] = useState(tags)
 
   function openTags(e) {

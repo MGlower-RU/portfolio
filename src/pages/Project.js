@@ -46,7 +46,11 @@ export default function Project() {
             {project.title}
           </h2>
           <p>
-            {project.descrition}
+            {t(`project.description`,
+            {
+              ru: project.description.ru,
+              en: project.description.en
+            })}
           </p>
           <a href={project.hostLink}>
             {t('defaults.hostLink')}
