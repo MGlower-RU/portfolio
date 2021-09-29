@@ -141,7 +141,7 @@ export const data = {
       },
       type: 'multipage',
       hostLink: 'https://plonq.netlify.app/',
-      tags: ['html', 'scss', 'react', 'react-router-dom', 'react hooks', 'form submission', 'graphs']
+      tags: ['html', 'scss', 'react', 'react-router-dom', 'react hooks', 'form submission', 'graphs', 'adaptive']
     },
     {
       id: 'trafalgar',
