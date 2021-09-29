@@ -1,11 +1,14 @@
 import Movie1 from '../images/data/movie/1.png'
 import Movie2 from '../images/data/movie/2.png'
-import Trafalgar1 from '../images/data/trafalgar/1.png'
-import Trafalgar2 from '../images/data/trafalgar/2.png'
-import Trafalgar3 from '../images/data/trafalgar/3.png'
-import Trafalgar4 from '../images/data/trafalgar/4.png'
-import Trafalgar5 from '../images/data/trafalgar/5.png'
-import Trafalgar6 from '../images/data/trafalgar/6.png'
+import Bau1 from '../images/data/bau-landing/1.png'
+import Bau2 from '../images/data/bau-landing/2.png'
+import Bau3 from '../images/data/bau-landing/3.png'
+import Bau4 from '../images/data/bau-landing/4.png'
+import Bau5 from '../images/data/bau-landing/5.png'
+import Bau6 from '../images/data/bau-landing/6.png'
+import Bau7 from '../images/data/bau-landing/7.png'
+import Bau8 from '../images/data/bau-landing/8.png'
+import Bau9 from '../images/data/bau-landing/9.png'
 import Yakutia1 from '../images/data/yakutia/1.png'
 import Yakutia2 from '../images/data/yakutia/2.png'
 import Yakutia3 from '../images/data/yakutia/3.png'
@@ -141,27 +144,30 @@ export const data = {
       },
       type: 'multipage',
       hostLink: 'https://plonq.netlify.app/',
-      tags: ['html', 'scss', 'react', 'react-router-dom', 'react hooks', 'form submission', 'graphs', 'adaptive']
+      tags: ['html', 'scss', 'react', 'react-router-dom', 'react hooks', 'form submission', 'graphs', 'responsive']
     },
     {
-      id: 'trafalgar',
-      img: Trafalgar1,
+      id: 'bau',
+      img: Bau1,
       imgs: [
-        Trafalgar1,
-        Trafalgar2,
-        Trafalgar3,
-        Trafalgar4,
-        Trafalgar5,
-        Trafalgar6,
+        Bau1,
+        Bau2,
+        Bau3,
+        Bau4,
+        Bau5,
+        Bau6,
+        Bau7,
+        Bau8,
+        Bau9,
       ],
-      title: 'Trafalgar',
+      title: 'Bau',
       description: {
-        en: '',
-        ru: ''
+        en: 'The landing site with responsive layout, smooth scrolling navigation, grid image library and tabs in materials section.',
+        ru: 'Адаптивный лэндинг сайт с плавной навигацией при клике по пункту меню, галерея изображений на основе grid-сетки.'
       },
       type: 'landing',
-      hostLink: '',
-      tags: []
+      hostLink: 'https://mglower-kwork-bau-landing.netlify.app/',
+      tags: ['html', 'scss', 'responsive', 'react', 'react hooks']
     },
     {
       id: 'yakutia',
