@@ -1,8 +1,5 @@
 import Movie1 from '../images/data/movie/1.png'
 import Movie2 from '../images/data/movie/2.png'
-import Flowbase1 from '../images/data/flowbase/1.png'
-import Flowbase2 from '../images/data/flowbase/2.png'
-import Flowbase3 from '../images/data/flowbase/3.png'
 import Trafalgar1 from '../images/data/trafalgar/1.png'
 import Trafalgar2 from '../images/data/trafalgar/2.png'
 import Trafalgar3 from '../images/data/trafalgar/3.png'
@@ -19,6 +16,11 @@ import Yakutia7 from '../images/data/yakutia/7.png'
 import Yakutia8 from '../images/data/yakutia/8.png'
 import RockPaperScissors1 from '../images/data/rockPaperScissors/1.png'
 import RockPaperScissors2 from '../images/data/rockPaperScissors/2.png'
+import Plonq1 from '../images/data/plonq/1.png'
+import Plonq2 from '../images/data/plonq/2.png'
+import Plonq3 from '../images/data/plonq/3.png'
+import Plonq4 from '../images/data/plonq/4.png'
+import Plonq5 from '../images/data/plonq/5.png'
 
 export const data = {
   hobbies: [
@@ -123,21 +125,23 @@ export const data = {
       tags: ['react', 'react hooks', 'material-ui', 'api']
     },
     {
-      id: 'flowbase',
-      img: Flowbase1,
+      id: 'plonq',
+      img: Plonq1,
       imgs: [
-        Flowbase1,
-        Flowbase2,
-        Flowbase3,
+        Plonq1,
+        Plonq2,
+        Plonq3,
+        Plonq4,
+        Plonq5,
       ],
-      title: 'Flowbase',
+      title: 'Plonq',
       description: {
-        en: '',
-        ru: ''
+        en: 'E-cigarettes multipage site',
+        ru: 'Многостраничный сайт электронных сигарет'
       },
-      type: 'landing',
-      hostLink: '/',
-      tags: []
+      type: 'multipage',
+      hostLink: 'https://plonq.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react-router-dom', 'react hooks', 'form submission', 'graphs']
     },
     {
       id: 'trafalgar',
@@ -156,7 +160,7 @@ export const data = {
         ru: ''
       },
       type: 'landing',
-      hostLink: 'https://mglower-countries.netlify.app/',
+      hostLink: '',
       tags: []
     },
     {

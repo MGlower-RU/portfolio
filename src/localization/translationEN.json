@@ -55,7 +55,8 @@
   "projects": {
     "types": {
       "landing": "Landing",
-      "game": "Game"
+      "game": "Game",
+      "multipage": "Multipage"
     }
   },
   "project": {

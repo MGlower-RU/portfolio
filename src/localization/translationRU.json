@@ -55,7 +55,8 @@
   "projects": {
     "types": {
       "landing": "Лэндинг",
-      "game": "Игра"
+      "game": "Игра",
+      "multipage": "Многостраничный"
     }
   },
   "project": {
