@@ -9,14 +9,6 @@ import Bau6 from '../images/data/bau-landing/6.png'
 import Bau7 from '../images/data/bau-landing/7.png'
 import Bau8 from '../images/data/bau-landing/8.png'
 import Bau9 from '../images/data/bau-landing/9.png'
-import Yakutia1 from '../images/data/yakutia/1.png'
-import Yakutia2 from '../images/data/yakutia/2.png'
-import Yakutia3 from '../images/data/yakutia/3.png'
-import Yakutia4 from '../images/data/yakutia/4.png'
-import Yakutia5 from '../images/data/yakutia/5.png'
-import Yakutia6 from '../images/data/yakutia/6.png'
-import Yakutia7 from '../images/data/yakutia/7.png'
-import Yakutia8 from '../images/data/yakutia/8.png'
 import RockPaperScissors1 from '../images/data/rockPaperScissors/1.png'
 import RockPaperScissors2 from '../images/data/rockPaperScissors/2.png'
 import Plonq1 from '../images/data/plonq/1.png'
@@ -46,6 +38,9 @@ export const data = {
         {
           name: 'mongoDB',
         },
+        {
+          name: 'local storage',
+        },
       ]
     },
     {
@@ -63,10 +58,21 @@ export const data = {
       name: 'technologies',
       items: [
         {
-          name: 'HTML',
+          name: 'HTML5',
         },
         {
-          name: 'adaptive',
+          name: 'CSS3',
+        },
+        {
+          id: 'adaptive',
+        },
+        {
+          name: 'JS ES12',
+          items: [
+            'replaceAll',
+            'Promise.any',
+            '&&=, ||=, ??= operators',
+          ]
         },
         {
           name: 'ReactJS',
@@ -90,6 +96,27 @@ export const data = {
         },
         {
           name: 'inline',
+        },
+      ]
+    },
+    {
+      name: 'soft',
+      items: [
+        {
+          id: 'languages',
+          items: [
+            'русский',
+            'english(B1-B2)'
+          ]
+        },
+        {
+          id: 'timeManagement',
+        },
+        {
+          id: 'criticalThinking',
+        },
+        {
+          id: 'positivity',
         },
       ]
     },
@@ -139,8 +166,8 @@ export const data = {
       ],
       title: 'Plonq',
       description: {
-        en: 'E-cigarettes multipage site',
-        ru: 'Многостраничный сайт электронных сигарет'
+        en: 'E-cigarettes multipage site (Figma layout)',
+        ru: 'Многостраничный сайт электронных сигарет (макет из Figma)'
       },
       type: 'multipage',
       hostLink: 'https://plonq.netlify.app/',
@@ -169,27 +196,15 @@ export const data = {
       hostLink: 'https://mglower-kwork-bau-landing.netlify.app/',
       tags: ['html', 'scss', 'responsive', 'react', 'react hooks']
     },
+  ],
+  aboutMeText: [
     {
-      id: 'yakutia',
-      img: Yakutia1,
-      imgs: [
-        Yakutia1,
-        Yakutia2,
-        Yakutia3,
-        Yakutia4,
-        Yakutia5,
-        Yakutia6,
-        Yakutia7,
-        Yakutia8,
-      ],
-      title: 'Yakutia',
-      description: {
-        en: '',
-        ru: ''
-      },
-      type: 'landing',
-      hostLink: '/',
-      tags: []
+      en: 'I was born {{years}} years ago then mom named me Danil. I live in Petrozavodsk, Karelia Republic. I am on 11th grade in school now.',
+      ru: 'Меня зовут Данил и мне {{years}} лет. На данный момент проживаю в городе Петрозаводск, Республика Карелия. Обучаюсь в 11 классе.'
     },
+    {
+      en: 'I\'ve started to learn programming 1.5 years ago with Python but after the 5 months of coding I\'ve made a decision to relocate myself on web-programming with HTML, CSS and JS. I\'ve been learning its on the resources like MDN, learn.js, codewars, cssBattle, documentations. I have several completed projects on Kwork. My current skills are based on Frontend React technologies (check it on skills page). React development stage consists: code splitting by folders (i.e. components, styles), functional components, scss BEM stylization.',
+      ru: 'Начал изучать программирование 1.5 года назад с языка Python, понял что хочу "видеть результат" и после 5 месяцев кодинга перешёл к изучению веб-разработки на HTML, CSS и JS. Обучался по MDN, learn.js и документациям, а проверял, поддерживал уровень знаний и узнавал новые методы решений задач с помощью codewars, cssBattle и тому подобных ресурсов. Занимаюсь разработкой проектов на ReactJS (смотрите навыки в секции "навыки"). При разработке на React предпочитаю: использовать разделение кода по папкам (components, styles, ...), функциональные компоненты, scss стилизацию по БЭМ, npm. Есть пара выполненных проектов на Kwork.'
+    }
   ]
 }

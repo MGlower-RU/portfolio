@@ -63,7 +63,7 @@ export default function Skills() {
                               onClick={openSkill}
                               className='skills__item--extra'
                             >
-                              {el.name}
+                              {el.id !== undefined ? t(`skills.items.${el.id}`) : el.name}
                             </a>
                             <ul>
                               {
@@ -79,7 +79,7 @@ export default function Skills() {
                           </>
                           :
                           <p>
-                            {el.name}
+                            {el.id !== undefined ? t(`skills.items.${el.id}`) : el.name}
                           </p>
                         }
                       </div>

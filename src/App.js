@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import DataContextFunction from './contexts/DataContext';
 import I18nContextFunction from './contexts/i18nextContext';
 
+import Loading from './components/Loading';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Routing from './components/Routing';
@@ -29,7 +30,7 @@ function App() {
           <Header />
           <DataContextFunction>
             <main className='main__wrapper'>
-              <Suspense fallback='loading...'>
+              <Suspense fallback={<Loading/>}>
                 <Routing />
               </Suspense>
             </main>

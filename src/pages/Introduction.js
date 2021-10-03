@@ -8,7 +8,7 @@ import Arrow from '../images/arrow_down.svg'
 import '../styles/about.scss'
 
 export default function Introduction() {
-  const { hobbies } = useContext(DataContext)
+  const { hobbies, aboutMeText } = useContext(DataContext)
   const { t } = useContext(i18nContext)
   const years = 17
 
@@ -65,14 +65,22 @@ export default function Introduction() {
       </a>
       <div className="about__cv__wrapper">
         <p>
-          Contact me on: <a href="mailto:zaharov.danil.job@gmail.com">zaharov.danil.job@gmail.com</a>
+          {t('defaults.contact')}: <a href="mailto:zaharov.danil.job@gmail.com">zaharov.danil.job@gmail.com</a>
         </p>
-        <p>
-          I was born {years} years ago then mom named me Danil. I am on 11th grade in school now. I live in Petrozavodsk, Karelia Republic.
-        </p>
-        <p>
-          My current skills are based on Frontend React technologies.
-        </p>
+        {
+          aboutMeText.map((el, i) => {
+            return (
+              <p key={i}>
+                {t(`about.cv.text.${i}`,
+                {
+                  ru: aboutMeText[i].ru,
+                  en: aboutMeText[i].en,
+                  years: years
+                })}
+              </p>
+            )
+          })
+        }
       </div>
     </>
   )

@@ -2,7 +2,8 @@
   "defaults": {
     "back": "Go back",
     "hostLink": "Check site",
-    "filter": "Filter by"
+    "filter": "Filter by",
+    "contact": "Contact me"
   },
   "header": {
     "nav": {
@@ -35,12 +36,16 @@
       "motto": "I wanna increase my skills and make its useful."
     },
     "cv": {
-      "download": "Click to download CV"
+      "download": "Click to download CV",
+      "text": {
+        "0": "{{en}}",
+        "1": "{{en}}"
+      }
     }
   },
   "skills": {
     "database": {
-      "name": "database"
+      "name": "Data storage"
     },
     "cms": {
       "name": "CMS"
@@ -50,6 +55,16 @@
     },
     "styling": {
       "name": "Styling"
+    },
+    "soft": {
+      "name": "Soft"
+    },
+    "items": {
+      "languages": "Languages",
+      "timeManagement": "Time management",
+      "adaptive": "Adaptive layout",
+      "positivity": "Positivity",
+      "criticalThinking": "Critical thinking"
     }
   },
   "projects": {

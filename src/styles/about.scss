@@ -99,7 +99,6 @@
 
   p {
     font-size: 2.4rem;
-    text-indent: 2rem;
 
     a {
       color: var(--light);
@@ -111,9 +110,15 @@
         --light: var(--purple)
       }
     }
-    
-    &:not(:last-of-type) {
-      margin-bottom: 2rem;
+
+    &:first-of-type {
+      margin-bottom: 4rem;
+    }
+
+    &:not(:first-of-type) {
+      text-indent: 2rem;
+      margin-top: 1.4rem;
+      line-height: 1.4em;
     }
   }
 }
