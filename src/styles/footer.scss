@@ -3,8 +3,9 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  min-height: var(--footer-height);
   margin-top: auto;
-  padding: 1rem var(--horizontal-padding);
+  padding: 0 var(--horizontal-padding);
   background-color: var(--purple);
 }
 

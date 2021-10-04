@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { DataContext } from "../contexts/DataContext"
+import { FunctionsContext } from "../contexts/FunctionsContext"
 import { i18nContext } from "../contexts/i18nextContext"
 
 import CV from '../CV.txt'
@@ -8,6 +9,7 @@ import Arrow from '../images/arrow_down.svg'
 import '../styles/about.scss'
 
 export default function Introduction() {
+  const { copyToClipboard } = useContext(FunctionsContext)
   const { hobbies, aboutMeText } = useContext(DataContext)
   const { t } = useContext(i18nContext)
   const years = 17
@@ -65,7 +67,13 @@ export default function Introduction() {
       </a>
       <div className="about__cv__wrapper">
         <p>
-          {t('defaults.contact')}: <a href="mailto:zaharov.danil.job@gmail.com">zaharov.danil.job@gmail.com</a>
+          {t('defaults.contact')}:&nbsp;
+          <a
+            href="zaharov.danil.job@gmail.com"
+            onClick={copyToClipboard}
+          >
+            zaharov.danil.job@gmail.com
+          </a>
         </p>
         {
           aboutMeText.map((el, i) => {

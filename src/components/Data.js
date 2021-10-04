@@ -205,6 +205,6 @@ export const data = {
     {
       en: 'I\'ve started to learn programming 1.5 years ago with Python but after the 5 months of coding I\'ve made a decision to relocate myself on web-programming with HTML, CSS and JS. I\'ve been learning its on the resources like MDN, learn.js, codewars, cssBattle, documentations. I have several completed projects on Kwork. My current skills are based on Frontend React technologies (check it on skills page). React development stage consists: code splitting by folders (i.e. components, styles), functional components, scss BEM stylization.',
       ru: 'Начал изучать программирование 1.5 года назад с языка Python, понял что хочу "видеть результат" и после 5 месяцев кодинга перешёл к изучению веб-разработки на HTML, CSS и JS. Обучался по MDN, learn.js и документациям, а проверял, поддерживал уровень знаний и узнавал новые методы решений задач с помощью codewars, cssBattle и тому подобных ресурсов. Занимаюсь разработкой проектов на ReactJS (смотрите навыки в секции "навыки"). При разработке на React предпочитаю: использовать разделение кода по папкам (components, styles, ...), функциональные компоненты, scss стилизацию по БЭМ, npm. Есть пара выполненных проектов на Kwork.'
-    }
+    },
   ]
 }

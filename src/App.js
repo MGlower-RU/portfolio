@@ -12,6 +12,7 @@ import Routing from './components/Routing';
 import './components/i18n'
 
 import './styles/App.scss';
+import FunctionsContextFunction from './contexts/FunctionsContext';
 
 function App() {
   useEffect(() => {
@@ -29,11 +30,13 @@ function App() {
         <I18nContextFunction>
           <Header />
           <DataContextFunction>
+          <FunctionsContextFunction>
             <main className='main__wrapper'>
               <Suspense fallback={<Loading/>}>
                 <Routing />
               </Suspense>
             </main>
+          </FunctionsContextFunction>
           </DataContextFunction>
           <Footer />
         </I18nContextFunction>
