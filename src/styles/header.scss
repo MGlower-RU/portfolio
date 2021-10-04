@@ -43,9 +43,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  height: var(--header-height);
   border-radius: 0 0 20rem 0;
-  padding: 2rem var(--horizontal-padding);
+  padding: 0 var(--horizontal-padding);
   background-color: var(--purple);
   box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
   transition: border-radius var(--transition);
@@ -63,19 +65,28 @@
 .nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   gap: 2rem 3rem;
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: both proximity;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .nav__item {
   position: relative;
+  flex: 0 0 auto;
   font-size: 2rem;
   line-height: 1.6em;
   color: var(--light);
+  padding-bottom: .2rem;
+  scroll-snap-align: center;
 
   &::after {
     position: absolute;
-    top: 100%;
+    bottom: 0;
     left: 0;
     content: '';
     width: 0;
