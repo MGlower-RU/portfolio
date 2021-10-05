@@ -7,7 +7,6 @@ export default function FunctionsContextFunction(props) {
 
   function copyToClipboard(e) {
     e.preventDefault()
-    clearTimeout()
 
     if (navigator.clipboard) {
       navigator.clipboard.writeText(e.target.textContent)

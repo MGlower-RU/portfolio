@@ -3,7 +3,8 @@ import { DataContext } from "../contexts/DataContext"
 import { FunctionsContext } from "../contexts/FunctionsContext"
 import { i18nContext } from "../contexts/i18nextContext"
 
-import CV from '../CV.txt'
+import enCV from '../EN.txt'
+import ruCV from '../RU.txt'
 import Arrow from '../images/arrow_down.svg'
 
 import '../styles/about.scss'
@@ -62,7 +63,13 @@ export default function Introduction() {
           </div>
         </div>
       </div>
-      <a href={CV} download='CV.txt' className="about__cv__download">
+      <a
+        href={
+          localStorage.getItem('i18nextLng') === 'ru' ? ruCV : enCV
+        }
+        download='CV.txt'
+        className="about__cv__download"
+      >
         {t('about.cv.download')}
       </a>
       <div className="about__cv__wrapper">
