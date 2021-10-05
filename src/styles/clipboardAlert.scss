@@ -1,0 +1,66 @@
+.clipboard__alert__wrapper {
+  --translate1: translateY(-100%);
+  --translate2: translateY(4rem);
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  transform: var(--translate1);
+  z-index: 100;
+
+  &-enter {
+    transform: var(--translate1);
+    opacity: 0;
+
+    &-active {
+      opacity: 1;
+      transform: var(--translate2);
+      transition: all 700ms;
+    }
+
+    &-done {
+      opacity: 1;
+      transform: var(--translate2);
+    }
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: var(--translate2);
+
+    &-active {
+      opacity: var(--translate2);
+      transform: var(--translate1);
+      transition: all 700ms;
+    }
+  }
+}
+
+.clipboard__alert__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--light);
+  font-size: 1.6rem;
+  background-color: green;
+  padding: 1rem 2rem;
+  border-radius: .4rem;
+
+  & > span {
+    position: absolute;
+    top: .3rem;
+    right: .5rem;
+    font-size: inherit;
+    color: var(--light);
+    line-height: 1em;
+    cursor: pointer;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--background);
+    }
+  }
+}

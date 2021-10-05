@@ -68,12 +68,12 @@ export default function Introduction() {
       <div className="about__cv__wrapper">
         <p>
           {t('defaults.contact')}:&nbsp;
-          <a
-            href="zaharov.danil.job@gmail.com"
-            onClick={copyToClipboard}
-          >
-            zaharov.danil.job@gmail.com
-          </a>
+            <a
+              href="zaharov.danil.job@gmail.com"
+              onClick={copyToClipboard}
+            >
+              zaharov.danil.job@gmail.com
+            </a>
         </p>
         {
           aboutMeText.map((el, i) => {

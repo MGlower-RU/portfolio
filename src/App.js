@@ -13,6 +13,7 @@ import './components/i18n'
 
 import './styles/App.scss';
 import FunctionsContextFunction from './contexts/FunctionsContext';
+import ClipboardAlert from './components/ClipboardAlert';
 
 function App() {
   useEffect(() => {
@@ -32,6 +33,7 @@ function App() {
           <DataContextFunction>
           <FunctionsContextFunction>
             <main className='main__wrapper'>
+              <ClipboardAlert />
               <Suspense fallback={<Loading/>}>
                 <Routing />
               </Suspense>

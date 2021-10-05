@@ -3,7 +3,8 @@
     "back": "Go back",
     "hostLink": "Check site",
     "filter": "Filter by",
-    "contact": "Contact me"
+    "contact": "Contact me",
+    "copy": "Copied to clipboard"
   },
   "header": {
     "nav": {

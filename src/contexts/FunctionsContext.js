@@ -1,21 +1,26 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const FunctionsContext = createContext();
 
-function copyToClipboard(e) {
-  e.preventDefault()
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(e.target.textContent)
-    .then(() => {
-      alert('The text was copied to clipboard')
-    })
-    .catch(err => console.log(err))
-  }
-}
-
 export default function FunctionsContextFunction(props) {
+  const [isCopied, setIsCopied] = useState(false)
+
+  function copyToClipboard(e) {
+    e.preventDefault()
+    clearTimeout()
+
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(e.target.textContent)
+      .then(() => {
+        setIsCopied(true)
+        setTimeout(() => setIsCopied(false), 3000)
+      })
+      .catch(err => console.log(err))
+    }
+  }
+
   return (
-    <FunctionsContext.Provider value={{copyToClipboard}}>
+    <FunctionsContext.Provider value={{copyToClipboard, isCopied, setIsCopied}}>
       {props.children}
     </FunctionsContext.Provider>
   )
