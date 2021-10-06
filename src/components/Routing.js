@@ -14,11 +14,12 @@ export default function Routing() {
   return (
     <TransitionGroup>
     <CSSTransition
-      timeout={300}
+      timeout={750}
       classNames='page-fade'
       key={location.key}
       nodeRef={myRef}
       exit={false}
+      appear={true}
     >
     <Switch location={location}>
       <Route path='/about'>
