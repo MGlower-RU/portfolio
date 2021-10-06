@@ -18,6 +18,7 @@ export default function Routing() {
       classNames='page-fade'
       key={location.key}
       nodeRef={myRef}
+      exit={false}
     >
     <Switch location={location}>
       <Route path='/about'>
