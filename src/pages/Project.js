@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, forwardRef } from "react";
 import { useParams } from "react-router"
 import { DataContext } from "../contexts/DataContext";
 import { i18nContext } from "../contexts/i18nextContext";
@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import '../styles/project.scss'
 import { Link } from "react-router-dom";
 
-export default function Project() {
+export const Project = forwardRef(() => {
   const { projects } = useContext(DataContext)
   const { t } = useContext(i18nContext)
   const { id } = useParams()
@@ -70,4 +70,4 @@ export default function Project() {
       </div>
     </div>
   )
-}
+})

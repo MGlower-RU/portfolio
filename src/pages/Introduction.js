@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { forwardRef, useContext } from "react"
 import { DataContext } from "../contexts/DataContext"
 import { FunctionsContext } from "../contexts/FunctionsContext"
 import { i18nContext } from "../contexts/i18nextContext"
@@ -9,7 +9,7 @@ import Arrow from '../images/arrow_down.svg'
 
 import '../styles/about.scss'
 
-export default function Introduction() {
+export const Introduction = forwardRef((props, ref) => {
   const { copyToClipboard } = useContext(FunctionsContext)
   const { hobbies, aboutMeText } = useContext(DataContext)
   const { t } = useContext(i18nContext)
@@ -17,7 +17,7 @@ export default function Introduction() {
 
   return (
     <>
-      <div className="introduction__wrapper">
+      <div ref={ref} className="introduction__wrapper">
         <div className="introduction__header">
           <div className="introduction__title">
             <div className="introduction__title__profession">
@@ -99,4 +99,4 @@ export default function Introduction() {
       </div>
     </>
   )
-}
+})

@@ -1,10 +1,10 @@
-import { useContext } from 'react'
+import { forwardRef, useContext } from 'react'
 import { DataContext } from '../contexts/DataContext'
 import { i18nContext } from '../contexts/i18nextContext'
 
 import '../styles/skills.scss'
 
-export default function Skills() {
+export const Skills = forwardRef((props, ref) => {
   const { skills } = useContext(DataContext)
   const { t } = useContext(i18nContext)
 
@@ -42,7 +42,7 @@ export default function Skills() {
   }
 
   return (
-    <div className="skills__wrapper">
+    <div ref={ref} className="skills__wrapper">
       {
         skills.map((el, i) => {
           return (
@@ -93,4 +93,4 @@ export default function Skills() {
       }
     </div>
   )
-}
+})

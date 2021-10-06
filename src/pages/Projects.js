@@ -1,10 +1,10 @@
-import { useContext, useState } from 'react'
+import { forwardRef, useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { DataContext } from '../contexts/DataContext'
 import { i18nContext } from '../contexts/i18nextContext'
 import '../styles/projects.scss'
 
-export default function Projects() {
+export const Projects = forwardRef((props, ref) => {
   const data = useContext(DataContext)
   const { t } = useContext(i18nContext)
   const tags = [...new Set(data.projects.map(el => el.tags).flat(1).map(el => el.toLowerCase()))]
@@ -40,7 +40,7 @@ export default function Projects() {
   }
 
   return (
-    <div className="projects__wrapper">
+    <div ref={ref} className="projects__wrapper">
       <div className="projects__filter__wrapper">
         <a
           href='/'
@@ -97,4 +97,4 @@ export default function Projects() {
       </div>
     </div>
   )
-}
+})
