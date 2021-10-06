@@ -40,22 +40,5 @@ export default function Routing() {
     </Switch>
     </CSSTransition>
     </TransitionGroup>
-    // <Switch>
-    //   <Route path='/about'>
-    //     <Introduction />
-    //   </Route>
-    //   <Route path='/skills'>
-    //     <Skills />
-    //   </Route>
-    //   <Route path='/projects/:id'>
-    //     <Project />
-    //   </Route>
-    //   <Route path='/projects'>
-    //     <Projects />
-    //   </Route>
-    //   <Route path='/'>
-    //     <Redirect to='/about' />
-    //   </Route>
-    // </Switch>
   )
 }
