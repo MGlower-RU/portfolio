@@ -14,6 +14,25 @@
   padding: var(--vertical-main-padding) var(--horizontal-main-padding);
 }
 
+.page-fade {
+  &-enter {
+    opacity: 0;
+  }
+  
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+  
+  &-exit {
+    opacity: 1;
+  }
+  
+  &-exit-active {
+    opacity: 0;
+  }
+}
+
 @media(max-width: 1110px) {
   .page {
     --vertical-main-padding: 4rem;
