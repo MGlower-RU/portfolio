@@ -77,6 +77,8 @@
 
 .introduction__scroll-arrow {
   margin-top: 4rem;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 .about__cv__download {
@@ -237,6 +239,10 @@
 
   .about__cv__download {
     font-size: 1.6rem;
+  }
+
+  .introduction__wrapper {
+    min-height: calc(100vh - var(--header-height) - 8rem);
   }
 }
 

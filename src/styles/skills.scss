@@ -69,7 +69,8 @@
     }
 
     & + ul {
-      display: none;
+      display: flex;
+      flex-direction: column;
       position: absolute;
       top: 100%;
       left: 0;
@@ -78,6 +79,10 @@
       background-color: var(--gray);
       min-width: 100%;
       z-index: 3;
+      opacity: 0;
+      transform: translate(-50%, 35%);
+      pointer-events: none;
+      transition: all var(--transition);
 
       li {
         color: var(--dark);
@@ -92,8 +97,9 @@
     }
 
     &.active + ul {
-      display: flex;
-      flex-direction: column;
+      opacity: 1;
+      transform: translate(0, 0);
+      pointer-events: auto;
     }
   }
 }
