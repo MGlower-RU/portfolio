@@ -32,11 +32,9 @@ export const data = {
           name: 'firebase',
           items: [
             'collection',
-            'database'
+            'database',
+            'auth'
           ]
-        },
-        {
-          name: 'mongoDB',
         },
         {
           name: 'local storage',
@@ -48,6 +46,7 @@ export const data = {
       items: [
         {
           name: 'netlify',
+          items: ['form submission']
         },
         {
           name: 'wordpress',

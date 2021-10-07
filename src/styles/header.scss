@@ -120,13 +120,18 @@
   font-weight: 600;
   color: var(--dark);
   text-transform: uppercase;
-  transition: color var(--transition);
+  border-bottom: .1rem solid transparent;
+  transition: all var(--transition);
 
-  &:hover,
-  &:focus,
+  &:not(.current) {
+    &:focus,
+    &:hover {
+      border-bottom-color: var(--purple);
+    }
+  }
+  
   &.current {
     color: var(--purple);
-    transition: color var(--transition);
   }
 
   &:not(:last-child) {

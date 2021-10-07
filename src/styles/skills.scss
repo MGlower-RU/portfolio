@@ -80,9 +80,10 @@
       min-width: 100%;
       z-index: 3;
       opacity: 0;
-      transform: translate(-50%, 35%);
+      transform: translateY(-20%);
       pointer-events: none;
       transition: all var(--transition);
+      transition-duration: .1s;
 
       li {
         color: var(--dark);
@@ -98,8 +99,9 @@
 
     &.active + ul {
       opacity: 1;
-      transform: translate(0, 0);
+      transform: translateY(0);
       pointer-events: auto;
+      transition: all var(--transition);
     }
   }
 }
