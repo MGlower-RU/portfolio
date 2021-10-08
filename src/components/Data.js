@@ -88,6 +88,9 @@ export const data = {
       name: 'styling',
       items: [
         {
+          name: 'SCSS',
+        },
+        {
           name: 'Material-UI',
         },
         {

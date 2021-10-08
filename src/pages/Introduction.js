@@ -4,7 +4,7 @@ import { FunctionsContext } from "../contexts/FunctionsContext"
 import { i18nContext } from "../contexts/i18nextContext"
 
 import enCV from '../EN.txt'
-import ruCV from '../RU.txt'
+import ruCV from '../RU.docx'
 import Arrow from '../images/arrow_down.svg'
 
 import '../styles/about.scss'
@@ -67,7 +67,7 @@ export const Introduction = forwardRef((props, ref) => {
         href={
           localStorage.getItem('i18nextLng') === 'ru' ? ruCV : enCV
         }
-        download='CV.txt'
+        download='CV_MGlower-RU'
         className="about__cv__download"
       >
         {t('about.cv.download')}
