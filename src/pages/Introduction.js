@@ -3,7 +3,7 @@ import { DataContext } from "../contexts/DataContext"
 import { FunctionsContext } from "../contexts/FunctionsContext"
 import { i18nContext } from "../contexts/i18nextContext"
 
-import enCV from '../EN.txt'
+import enCV from '../EN.docx'
 import ruCV from '../RU.docx'
 import Arrow from '../images/arrow_down.svg'
 
