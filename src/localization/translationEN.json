@@ -72,7 +72,8 @@
     "types": {
       "landing": "Landing",
       "game": "Game",
-      "multipage": "Multipage"
+      "multipage": "Multipage",
+      "stuff": "Cool stuff"
     }
   },
   "project": {

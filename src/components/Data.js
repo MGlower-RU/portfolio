@@ -16,6 +16,8 @@ import Plonq2 from '../images/data/plonq/2.png'
 import Plonq3 from '../images/data/plonq/3.png'
 import Plonq4 from '../images/data/plonq/4.png'
 import Plonq5 from '../images/data/plonq/5.png'
+import Garland1 from '../images/data/garland/1.png'
+import Garland2 from '../images/data/garland/2.png'
 
 export const data = {
   hobbies: [
@@ -197,6 +199,22 @@ export const data = {
       type: 'landing',
       hostLink: 'https://mglower-kwork-bau-landing.netlify.app/',
       tags: ['html', 'scss', 'responsive', 'react', 'react hooks']
+    },
+    {
+      id: 'garland',
+      img: Garland1,
+      imgs: [
+        Garland1,
+        Garland2,
+      ],
+      title: 'X-Mas garland',
+      description: {
+        en: 'The garland that has on/off and speed controls.',
+        ru: 'Гирлянда с кнопками включения/выключения и изменением скорости.'
+      },
+      type: 'stuff',
+      hostLink: 'https://mglower-garland.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks']
     },
   ],
   aboutMeText: [
