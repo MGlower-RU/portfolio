@@ -1,4 +1,5 @@
 .project__wrapper {
+  position: relative;
   width: 100%;
 }
 
@@ -40,6 +41,10 @@
 
   .control-dots .dot {
     background: var(--dark);
+  }
+
+  .slider {
+    cursor: zoom-in;
   }
 }
 
@@ -96,7 +101,51 @@
   border-radius: .4rem;
 }
 
+@media(min-width: 1240px) {
+  body.zoomed {
+    overflow: hidden;
+  
+    .project__zoom-img__wrapper {
+      opacity: 1;
+      pointer-events: auto;
+
+      img {
+        width: 70%;
+        height: 80%;
+      }
+    }
+  }
+  
+  .project__zoom-img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    pointer-events: none;
+    cursor: zoom-out;
+    opacity: 0;
+    transition: all var(--transition);
+  
+    img {
+      width: 20%;
+      height: 24%;
+      object-fit: contain;
+      transition: all var(--transition);
+    }
+  }
+}
+
 @media(max-width: 1240px) {
+  .project__zoom-img__wrapper {
+    display: none;
+  }
+
   .project__carousel__wrapper {
     width: clamp(44rem, 45vw, 70rem);
     height: 36rem;

@@ -1,4 +1,4 @@
-import { useContext, forwardRef } from "react";
+import { useContext, forwardRef, useState } from "react";
 import { useParams } from "react-router"
 import { DataContext } from "../contexts/DataContext";
 import { i18nContext } from "../contexts/i18nextContext";
@@ -13,9 +13,25 @@ export const Project = forwardRef(() => {
   const { t } = useContext(i18nContext)
   const { id } = useParams()
   const project = projects.find(el => el.id === id)
+  const [currentImg, setCurrentImg] = useState(project.imgs[0])
+
+  function zoomInSliderImg(e) {
+    setCurrentImg(project.imgs[e])
+    document.body.classList.add('zoomed')
+  }
+
+  function zoomOutSliderImg(e) {
+    document.body.classList.remove('zoomed')
+  }
 
   return (
     <div className="project__wrapper">
+      <div
+        className="project__zoom-img__wrapper"
+        onClick={zoomOutSliderImg}
+      >
+        <img src={currentImg} alt="" draggable='false' />
+      </div>
       <Link to='/projects' className="project__back">
         {t('defaults.back')}
       </Link>
@@ -31,6 +47,7 @@ export const Project = forwardRef(() => {
             infiniteLoop={true}
             showStatus={false}
             showThumbs={false}
+            onClickItem={zoomInSliderImg}
           >
             {
               project.imgs.map((el, i) => {
