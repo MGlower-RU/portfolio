@@ -18,6 +18,7 @@ import Plonq4 from '../images/data/plonq/4.png'
 import Plonq5 from '../images/data/plonq/5.png'
 import Garland1 from '../images/data/garland/1.png'
 import Garland2 from '../images/data/garland/2.png'
+import BirthdayTimer1 from '../images/data/birthday-timer/1.png'
 
 export const data = {
   hobbies: [
@@ -214,6 +215,21 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://mglower-garland.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks']
+    },
+    {
+      id: 'birthday-timer',
+      img: BirthdayTimer1,
+      imgs: [
+        BirthdayTimer1,
+      ],
+      title: 'Birthday countdown',
+      description: {
+        en: 'The site that will show the time left to your birthday.',
+        ru: 'Сайт, на котором можно узнать сколько дней осталось до вашего дня рождения.'
+      },
+      type: 'stuff',
+      hostLink: 'https://mglower-birthday-countdown.netlify.app/',
       tags: ['html', 'scss', 'react', 'react hooks']
     },
   ],
