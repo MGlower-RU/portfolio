@@ -19,6 +19,9 @@ import Plonq5 from '../images/data/plonq/5.png'
 import Garland1 from '../images/data/garland/1.png'
 import Garland2 from '../images/data/garland/2.png'
 import BirthdayTimer1 from '../images/data/birthday-timer/1.png'
+import Quiz1 from '../images/data/quiz/1.png'
+import Quiz2 from '../images/data/quiz/2.png'
+import Quiz3 from '../images/data/quiz/3.png'
 
 export const data = {
   hobbies: [
@@ -230,6 +233,23 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://mglower-birthday-countdown.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks']
+    },
+    {
+      id: 'quiz',
+      img: Quiz1,
+      imgs: [
+        Quiz1,
+        Quiz2,
+        Quiz3
+      ],
+      title: 'Quiz game',
+      description: {
+        en: 'Answer choice quiz game.',
+        ru: 'Викторина с выбором ответа.'
+      },
+      type: 'game',
+      hostLink: 'https://mglower-quiz.netlify.app/',
       tags: ['html', 'scss', 'react', 'react hooks']
     },
   ],
