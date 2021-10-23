@@ -16,7 +16,7 @@ export default i18next
 .init({
   detection: DETECTION_OPTIONS,
   fallbackLng: 'en',
-  debug: true,
+  debug: false,
   interpolation: {
     escapeValue: false,
   },
