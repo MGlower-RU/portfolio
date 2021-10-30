@@ -22,6 +22,7 @@ import BirthdayTimer1 from '../images/data/birthday-timer/1.png'
 import Quiz1 from '../images/data/quiz/1.png'
 import Quiz2 from '../images/data/quiz/2.png'
 import Quiz3 from '../images/data/quiz/3.png'
+import Weather1 from '../images/data/weather-app/1.png'
 
 export const data = {
   hobbies: [
@@ -251,6 +252,21 @@ export const data = {
       type: 'game',
       hostLink: 'https://mglower-quiz.netlify.app/',
       tags: ['html', 'scss', 'react', 'react hooks']
+    },
+    {
+      id: 'weather',
+      img: Weather1,
+      imgs: [
+        Weather1,
+      ],
+      title: 'Weather check',
+      description: {
+        en: 'Be ready to go outside.',
+        ru: 'Будь готов выйти на улицу.'
+      },
+      type: 'stuff',
+      hostLink: 'https://react-weather-6af5c.web.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
     },
   ],
   aboutMeText: [
