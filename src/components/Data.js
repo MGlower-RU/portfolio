@@ -23,6 +23,10 @@ import Quiz1 from '../images/data/quiz/1.png'
 import Quiz2 from '../images/data/quiz/2.png'
 import Quiz3 from '../images/data/quiz/3.png'
 import Weather1 from '../images/data/weather-app/1.png'
+import TodoFirebase1 from '../images/data/todo-firebase/1.png'
+import TodoFirebase2 from '../images/data/todo-firebase/2.png'
+import TodoFirebase3 from '../images/data/todo-firebase/3.png'
+import TodoFirebase4 from '../images/data/todo-firebase/4.png'
 
 export const data = {
   hobbies: [
@@ -267,6 +271,24 @@ export const data = {
       type: 'stuff',
       hostLink: 'https://react-weather-6af5c.web.app/',
       tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
+    },
+    {
+      id: 'todo-firebase',
+      img: TodoFirebase1,
+      imgs: [
+        TodoFirebase1,
+        TodoFirebase2,
+        TodoFirebase3,
+        TodoFirebase4,
+      ],
+      title: 'Firebase Todo',
+      description: {
+        en: 'Todo app with auth and cloud database with Firebase.',
+        ru: 'Заметки с базой данных и аутентификацией.'
+      },
+      type: 'stuff',
+      hostLink: 'https://todo-d7596.web.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'adaptive', 'firebase', 'auth', 'database']
     },
   ],
   aboutMeText: [
