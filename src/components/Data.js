@@ -27,6 +27,7 @@ import TodoFirebase1 from '../images/data/todo-firebase/1.png'
 import TodoFirebase2 from '../images/data/todo-firebase/2.png'
 import TodoFirebase3 from '../images/data/todo-firebase/3.png'
 import TodoFirebase4 from '../images/data/todo-firebase/4.png'
+import SimpleIosCalculator1 from '../images/data/simple-ios-calculator/1.png'
 
 export const data = {
   hobbies: [
@@ -289,6 +290,21 @@ export const data = {
       type: 'stuff',
       hostLink: 'https://todo-d7596.web.app/',
       tags: ['html', 'css', 'react', 'react hooks', 'adaptive', 'firebase', 'auth', 'database']
+    },
+    {
+      id: 'simple-ios-calculator',
+      img: SimpleIosCalculator1,
+      imgs: [
+        SimpleIosCalculator1
+      ],
+      title: 'ios calculator',
+      description: {
+        en: 'ios theme calculator with basic functions.',
+        ru: 'Калькулятор с базовыми функциями.'
+      },
+      type: 'stuff',
+      hostLink: 'https://mglower-simple-ios-calculator.netlify.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
     },
   ],
   aboutMeText: [
