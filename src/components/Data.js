@@ -28,6 +28,14 @@ import TodoFirebase2 from '../images/data/todo-firebase/2.png'
 import TodoFirebase3 from '../images/data/todo-firebase/3.png'
 import TodoFirebase4 from '../images/data/todo-firebase/4.png'
 import SimpleIosCalculator1 from '../images/data/simple-ios-calculator/1.png'
+import AdidasAllbirds1 from '../images/data/adidas-allbirds/1.png'
+import AdidasAllbirds2 from '../images/data/adidas-allbirds/2.png'
+import AdidasAllbirds3 from '../images/data/adidas-allbirds/3.png'
+import AdidasAllbirds4 from '../images/data/adidas-allbirds/4.png'
+import AdidasAllbirds5 from '../images/data/adidas-allbirds/5.png'
+import AdidasAllbirds6 from '../images/data/adidas-allbirds/6.png'
+import AdidasAllbirds7 from '../images/data/adidas-allbirds/7.png'
+import AdidasAllbirds8 from '../images/data/adidas-allbirds/8.png'
 
 export const data = {
   hobbies: [
@@ -305,6 +313,28 @@ export const data = {
       type: 'stuff',
       hostLink: 'https://mglower-simple-ios-calculator.netlify.app/',
       tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
+    },
+    {
+      id: 'adidas-allbirds',
+      img: AdidasAllbirds1,
+      imgs: [
+        AdidasAllbirds1,
+        AdidasAllbirds2,
+        AdidasAllbirds3,
+        AdidasAllbirds4,
+        AdidasAllbirds5,
+        AdidasAllbirds6,
+        AdidasAllbirds7,
+        AdidasAllbirds8
+      ],
+      title: 'adidas Allbirds',
+      description: {
+        en: 'The site was taken from figma layout. Not used for commercial purposes.',
+        ru: 'Макет сайта был взят в Figma. Не используется в коммерческих целях.'
+      },
+      type: 'landing',
+      hostLink: 'https://mglower-adidas-allbirds.netlify.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'slider']
     },
   ],
   aboutMeText: [
