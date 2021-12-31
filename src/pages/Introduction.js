@@ -13,7 +13,7 @@ export const Introduction = forwardRef((props, ref) => {
   const { copyToClipboard } = useContext(FunctionsContext)
   const { hobbies, aboutMeText } = useContext(DataContext)
   const { t } = useContext(i18nContext)
-  const years = 17
+  const years = 18
 
   return (
     <>

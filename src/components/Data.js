@@ -52,6 +52,7 @@ export const data = {
           name: 'firebase',
           items: [
             'database',
+            'collections',
             'auth',
             'hosting'
           ]
