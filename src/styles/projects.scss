@@ -112,6 +112,7 @@
   transition: all var(--transition);
 
   h3, h4 {
+    text-transform: capitalize;
     text-align: center;
     font-weight: 300;
     color: var(--light);

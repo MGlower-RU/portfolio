@@ -36,6 +36,8 @@ import AdidasAllbirds5 from '../images/data/adidas-allbirds/5.png'
 import AdidasAllbirds6 from '../images/data/adidas-allbirds/6.png'
 import AdidasAllbirds7 from '../images/data/adidas-allbirds/7.png'
 import AdidasAllbirds8 from '../images/data/adidas-allbirds/8.png'
+import PasswordGenerator1 from '../images/data/password-generator/1.png'
+import PasswordGenerator2 from '../images/data/password-generator/2.png'
 
 export const data = {
   hobbies: [
@@ -336,6 +338,22 @@ export const data = {
       type: 'landing',
       hostLink: 'https://mglower-adidas-allbirds.netlify.app/',
       tags: ['html', 'css', 'react', 'react hooks', 'slider']
+    },
+    {
+      id: 'password-generator',
+      img: PasswordGenerator1,
+      imgs: [
+        PasswordGenerator1,
+        PasswordGenerator2,
+      ],
+      title: 'password generator',
+      description: {
+        en: 'Simple password generator.',
+        ru: 'Простой генератор паролей.'
+      },
+      type: 'stuff',
+      hostLink: 'https://mglower-password-generator.netlify.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'regexp']
     },
   ],
   aboutMeText: [
