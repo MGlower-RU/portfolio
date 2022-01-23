@@ -38,6 +38,8 @@ import AdidasAllbirds7 from '../images/data/adidas-allbirds/7.png'
 import AdidasAllbirds8 from '../images/data/adidas-allbirds/8.png'
 import PasswordGenerator1 from '../images/data/password-generator/1.png'
 import PasswordGenerator2 from '../images/data/password-generator/2.png'
+import MemoryCardGame1 from '../images/data/memory-game/1.png'
+import MemoryCardGame2 from '../images/data/memory-game/2.png'
 
 export const data = {
   hobbies: [
@@ -354,6 +356,22 @@ export const data = {
       type: 'stuff',
       hostLink: 'https://mglower-password-generator.netlify.app/',
       tags: ['html', 'css', 'react', 'react hooks', 'regexp']
+    },
+    {
+      id: 'card-memory-game',
+      img: MemoryCardGame1,
+      imgs: [
+        MemoryCardGame1,
+        MemoryCardGame2,
+      ],
+      title: 'memory game',
+      description: {
+        en: 'The game to increase your memory remembering skill and check your luck level.',
+        ru: 'Карточная игра для повышения навыков запоминания и проверки своей удачи.'
+      },
+      type: 'game',
+      hostLink: 'https://mglower-memory-card-game.netlify.app/',
+      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
     },
   ],
   aboutMeText: [
