@@ -133,7 +133,7 @@ export const data = {
           id: 'languages',
           items: [
             'русский',
-            'english(B1-B2)'
+            'english(B1)'
           ]
         },
         {
