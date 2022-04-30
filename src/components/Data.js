@@ -376,8 +376,8 @@ export const data = {
   ],
   aboutMeText: [
     {
-      en: 'I was born {{years}} years ago then mom named me Danil. I live in Petrozavodsk, Karelia Republic. I am on 11th grade in school now.',
-      ru: 'Меня зовут Данил и мне {{years}} лет. На данный момент проживаю в городе Петрозаводск, Республика Карелия. Обучаюсь в 11 классе.'
+      en: 'I was born {{years}} years ago then mom named me Danil. I live in Petrozavodsk, Karelia Republic. I finished 11th grade in school.',
+      ru: 'Меня зовут Данил и мне {{years}} лет. На данный момент проживаю в городе Петрозаводск, Республика Карелия. Имею диплом о среднем общем образовании.'
     },
     {
       en: 'I\'ve started to learn programming 1.5 years ago with Python but after the 5 months of coding I\'ve made a decision to relocate myself on web-programming with HTML, CSS and JS. I\'ve been learning its on the resources like MDN, learn.js, codewars, cssBattle, documentations. I have several completed projects on Kwork. My current skills are based on Frontend React technologies (check it on skills page). React development stage consists: code splitting by folders (i.e. components, styles), functional components, scss BEM stylization.',
