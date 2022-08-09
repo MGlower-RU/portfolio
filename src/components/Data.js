@@ -376,7 +376,7 @@ export const data = {
   ],
   aboutMeText: [
     {
-      en: 'I was born {{years}} years ago then mom named me Danil. I live in Petrozavodsk, Karelia Republic. I finished 11th grade in school.',
+      en: 'My name is Danil and I am {{years}} old. I live in Petrozavodsk, Karelia Republic. I finished 11th grade in school.',
       ru: 'Меня зовут Данил и мне {{years}} лет. На данный момент проживаю в городе Петрозаводск, Республика Карелия. Имею диплом о среднем общем образовании.'
     },
     {

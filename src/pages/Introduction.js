@@ -13,7 +13,7 @@ export const Introduction = forwardRef((props, ref) => {
   const { copyToClipboard } = useContext(FunctionsContext)
   const { hobbies, aboutMeText } = useContext(DataContext)
   const { t } = useContext(i18nContext)
-  const years = 18
+  const years = Math.floor((new Date().getTime() - new Date('01.01.2004').getTime())/3.154e+10)
 
   return (
     <>
