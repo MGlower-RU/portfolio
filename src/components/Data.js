@@ -40,6 +40,15 @@ import PasswordGenerator1 from '../images/data/password-generator/1.png'
 import PasswordGenerator2 from '../images/data/password-generator/2.png'
 import MemoryCardGame1 from '../images/data/memory-game/1.png'
 import MemoryCardGame2 from '../images/data/memory-game/2.png'
+import DalliLanding1 from '../images/data/dalli-landing/1.png'
+import DalliLanding2 from '../images/data/dalli-landing/2.png'
+import DalliLanding3 from '../images/data/dalli-landing/3.png'
+import DalliLanding4 from '../images/data/dalli-landing/4.png'
+import DalliLanding5 from '../images/data/dalli-landing/5.png'
+import DalliLanding6 from '../images/data/dalli-landing/6.png'
+import DalliLanding7 from '../images/data/dalli-landing/7.png'
+import DalliLanding8 from '../images/data/dalli-landing/8.png'
+import DalliLanding9 from '../images/data/dalli-landing/9.png'
 
 export const data = {
   hobbies: [
@@ -284,7 +293,7 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://react-weather-6af5c.web.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive']
     },
     {
       id: 'todo-firebase',
@@ -302,7 +311,7 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://todo-d7596.web.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'adaptive', 'firebase', 'auth', 'database']
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive', 'firebase', 'auth', 'database']
     },
     {
       id: 'simple-ios-calculator',
@@ -317,7 +326,7 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://mglower-simple-ios-calculator.netlify.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive']
     },
     {
       id: 'adidas-allbirds',
@@ -339,7 +348,7 @@ export const data = {
       },
       type: 'landing',
       hostLink: 'https://mglower-adidas-allbirds.netlify.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'slider']
+      tags: ['html', 'scss', 'react', 'react hooks', 'slider']
     },
     {
       id: 'password-generator',
@@ -355,7 +364,7 @@ export const data = {
       },
       type: 'stuff',
       hostLink: 'https://mglower-password-generator.netlify.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'regexp']
+      tags: ['html', 'scss', 'react', 'react hooks', 'regexp']
     },
     {
       id: 'card-memory-game',
@@ -371,7 +380,30 @@ export const data = {
       },
       type: 'game',
       hostLink: 'https://mglower-memory-card-game.netlify.app/',
-      tags: ['html', 'css', 'react', 'react hooks', 'adaptive']
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive']
+    },
+    {
+      id: 'dalli',
+      img: DalliLanding1,
+      imgs: [
+        DalliLanding1,
+        DalliLanding2,
+        DalliLanding3,
+        DalliLanding4,
+        DalliLanding5,
+        DalliLanding6,
+        DalliLanding7,
+        DalliLanding8,
+        DalliLanding9,
+      ],
+      title: 'dalli',
+      description: {
+        en: 'The project from Figma.',
+        ru: 'Проект на основе макета из Figma.'
+      },
+      type: 'landing',
+      hostLink: 'https://mglower-dalli-spa.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive', 'slider']
     },
   ],
   aboutMeText: [
