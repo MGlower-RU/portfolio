@@ -49,6 +49,14 @@ import DalliLanding6 from '../images/data/dalli-landing/6.png'
 import DalliLanding7 from '../images/data/dalli-landing/7.png'
 import DalliLanding8 from '../images/data/dalli-landing/8.png'
 import DalliLanding9 from '../images/data/dalli-landing/9.png'
+import ApartmentRent1 from '../images/data/apartment-rent/1.png'
+import ApartmentRent2 from '../images/data/apartment-rent/2.png'
+import ApartmentRent3 from '../images/data/apartment-rent/3.png'
+import ApartmentRent4 from '../images/data/apartment-rent/4.png'
+import ApartmentRent5 from '../images/data/apartment-rent/5.png'
+import ApartmentRent6 from '../images/data/apartment-rent/6.png'
+import ApartmentRent7 from '../images/data/apartment-rent/7.png'
+import ApartmentRent8 from '../images/data/apartment-rent/8.png'
 
 export const data = {
   hobbies: [
@@ -397,6 +405,28 @@ export const data = {
         DalliLanding9,
       ],
       title: 'dalli',
+      description: {
+        en: 'The project from Figma.',
+        ru: 'Проект на основе макета из Figma.'
+      },
+      type: 'landing',
+      hostLink: 'https://mglower-dalli-spa.netlify.app/',
+      tags: ['html', 'scss', 'react', 'react hooks', 'adaptive', 'slider']
+    },
+    {
+      id: 'apartment-rent',
+      img: ApartmentRent1,
+      imgs: [
+        ApartmentRent1,
+        ApartmentRent2,
+        ApartmentRent3,
+        ApartmentRent4,
+        ApartmentRent5,
+        ApartmentRent6,
+        ApartmentRent7,
+        ApartmentRent8,
+      ],
+      title: 'apartment rent',
       description: {
         en: 'The project from Figma.',
         ru: 'Проект на основе макета из Figma.'
