@@ -108,11 +108,16 @@ export const data = {
           id: 'adaptive',
         },
         {
-          name: 'JS ES12',
+          name: 'JS ES2022',
+        },
+        {
+          name: 'Typescript'
+        },
+        {
+          name: 'Redux',
           items: [
-            'replaceAll',
-            'Promise.any',
-            '&&=, ||=, ??= operators',
+            'react-redux',
+            'redux-toolkit',
           ]
         },
         {
@@ -121,7 +126,7 @@ export const data = {
             'hooks',
             'component approach',
             'APIs',
-            'libraries'
+            'libraries',
           ]
         },
       ]
@@ -137,9 +142,15 @@ export const data = {
         },
         {
           name: 'JSS',
+          items: [
+            'styled-components'
+          ]
         },
         {
           name: 'inline',
+        },
+        {
+          name: 'module.css'
         },
       ]
     },
