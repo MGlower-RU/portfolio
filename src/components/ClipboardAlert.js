@@ -19,11 +19,7 @@ export default function ClipboardAlert() {
     >
       <div ref={copyingRef} className='clipboard__alert__wrapper'>
           <div className='clipboard__alert__content'>
-            <span
-              onClick={() => {
-                setIsCopied(false)
-              }}
-            >
+            <span onClick={() => setIsCopied(false)}>
               &times;
             </span>
             <div className="clipboard__alert__text">

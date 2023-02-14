@@ -1,13 +1,12 @@
 .clipboard__alert__wrapper {
-  --translate1: translateY(-100%);
-  --translate2: translateY(4rem);
+  --translate1: translateY(-100%) translateX(-50%);
+  --translate2: translateY(4rem) translateX(-50%);
 
-  display: flex;
-  width: 100%;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
+  left: 50%;
   transform: var(--translate1);
   z-index: 100;
 
