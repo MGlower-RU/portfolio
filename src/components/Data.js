@@ -57,6 +57,7 @@ import ApartmentRent5 from '../images/data/apartment-rent/5.webp'
 import ApartmentRent6 from '../images/data/apartment-rent/6.webp'
 import ApartmentRent7 from '../images/data/apartment-rent/7.webp'
 import ApartmentRent8 from '../images/data/apartment-rent/8.webp'
+import TelegramAIAssistant from '../images/data/telegram-ai-assistant/1.webp'
 
 export const data = {
   hobbies: [
@@ -169,6 +170,21 @@ export const data = {
     },
   ],
   projects: [
+    {
+      id: 'telegram-ai-assistant',
+      img: TelegramAIAssistant,
+      imgs: [
+        TelegramAIAssistant,
+      ],
+      title: 'AI assistant bot',
+      description: {
+        en: 'This is an AI assistant bot created using Telegram Bot Api and OpenAI GPT model. The bot can remember your conversation context, also you can create Modes to setup bot prompt instantly.',
+        ru: 'Персональный чат ассистент в Телеграм на основе OpenAI GPT модели, который даст ответ на любой ваш вопрос. Бот запоминает контекст вашего разговора и отвечает основываясь на нём. Также вы можете создавать готовые темы для разговоры и сохранять их под нужным вам названием.'
+      },
+      type: 'stuff',
+      hostLink: 'https://t.me/MGlower_GPT_Bot',
+      tags: ['nextJS', 'telegram', 'AI', 'firebase']
+    },
     {
       id: 'rock-paper-scissors',
       img: RockPaperScissors1,
